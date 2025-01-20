@@ -1,16 +1,28 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="ホーム">
+	<main class="container mx-auto px-4 py-8">
+		<section class="text-center mb-16">
+			<h1 class="text-4xl font-bold text-blue-900 mb-4">会社名</h1>
+			<p class="text-xl text-gray-600">革新的なソリューションを提供</p>
+		</section>
+
+		<section class="max-w-4xl mx-auto mb-16">
+			<div class="bg-white shadow-lg rounded-lg p-8">
+				<h2 class="text-2xl font-bold text-blue-900 mb-4">私たちについて</h2>
+				<p class="text-gray-600 leading-relaxed">
+					最新のテクノロジーと創造的なアプローチで、
+					お客様のビジネスの成長をサポートします。
+				</p>
+			</div>
+		</section>
+
+		<section class="text-center">
+			<a href="/contact" class="inline-block bg-blue-900 text-white px-8 py-3 rounded-lg hover:bg-blue-800 transition-colors">
+				お問い合わせ
+			</a>
+		</section>
+	</main>
+</Layout>
